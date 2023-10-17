@@ -40,4 +40,21 @@ public class Stack {
         System.out.println("Height: " + height);
     }
 
+    //push -> this method will add new node in stack
+    public void push(int value){
+        //create new node
+        Node newNode = new Node(value);
+        //case 1: empty stack
+        if(height == 0){
+            top = newNode;
+        }
+        //case 2: stack is not empty
+        else {
+            newNode.next = top;
+            top = newNode;
+        }
+        height++;
+    }
+
+
 }
