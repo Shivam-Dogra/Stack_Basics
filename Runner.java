@@ -8,5 +8,11 @@ public class Runner {
         stack.printStack();
         stack.getTop();
         stack.getHeight();
+        System.out.println("");
+        
+        stack.pop();
+        stack.printStack();
+        stack.getTop();
+        stack.getHeight();
     }
 }

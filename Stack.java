@@ -56,5 +56,19 @@ public class Stack {
         height++;
     }
 
+    //pop -> this method will remove top node in stack
+    public Node pop(){
+        //case 1: empty stack
+        if(height == 0){
+            return null;
+        }
+        //case 2: stack is not empty
+        Node temp = top;
+        top = top.next;
+        temp.next = null;
+        height--;
+        return temp;
+    }
+
 
 }
